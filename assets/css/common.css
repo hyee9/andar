@@ -1,0 +1,82 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    margin: -1px;
+}
+
+
+
+/* 공통제품 */
+.prd-list{}
+.prd-list .img-area{position: relative;}
+.prd-list .img-area img{width: 100%;}
+.prd-list .img-area .icon{
+    position: absolute;
+    top: 0;right: 0;
+    width: 16%;
+    min-width: 38px;
+}
+.prd-list .img-area .rank{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.prd-list .text-area{
+    padding: 0 10px;
+}
+.prd-list .price-area{display: flex;}
+.prd-list .icons{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.prd-list .icons img{height: 19px;}
+
+
+
+/* 레이아웃 */
+.prd-list.grid2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.22%;
+    margin-bottom: 100px;
+}
+.prd-list.grid3{}
+.prd-list.grid4{}
+
+
+
+
+.point{
+    color: #C86733;
+}
+
+#header .nav-item .dot span{
+    position: relative; 
+}
+
+
+#header .nav-item .dot span::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #ee5728;
+    position: absolute;
+    top: -3px;
+    left: 90%;
+    margin-left: 5px; 
+}

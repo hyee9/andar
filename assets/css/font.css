@@ -1,0 +1,45 @@
+/* 
+    *ttf - 트루타입 (지원범위 구형)
+    *otf - 오픈트루타입 (지원범위 구형)
+
+    woff - 웹오픈폰트포맷 (최신브라우저)
+    woff2 - 웹오픈폰트포맷 (최신브라우저 woff 20%~50% 압축)
+*/
+
+@font-face {
+    font-family: "Gilroy";
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2');
+    /* url('../fonts/Gilroy-Regular.woff') format('woff'),
+    url('../fonts/Gilroy-Regular.woff') format('truetype'),
+    url('../fonts/Gilroy-Regular.woff') format('opentype'); */
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url('../fonts/Gilroy-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url('../fonts/Gilroy-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url('../fonts/NotoSansKR-Regular.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url('../fonts/NotoSansKR-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+

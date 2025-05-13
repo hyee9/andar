@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./main.js" defer></script>
+    
+</head>
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icon-menu" viewBox="0 0 22 17">
+          <path d="M22 0H0V1.5H22V0Z" fill="white"></path>
+          <path d="M22 7.72754H0V9.22754H22V7.72754Z" fill="white"></path>
+          <path d="M17 15.4541H0V16.9541H17V15.4541Z" fill="white"></path>
+        </symbol>
+      
+        <symbol id="icon-menu" viewBox="0 0 20 21">
+          <path d="M20 19.361L15.1854 14.5464C16.3833 13.0632 17.1135 11.1807 17.1135 9.12707C17.1135 4.40374 13.2801 0.570312 8.55676 0.570312C3.83343 0.570312 0 4.40374 0 9.12707C0 13.8504 3.83343 17.6838 8.55676 17.6838C10.6104 17.6838 12.4929 16.9537 13.976 15.7557L18.7906 20.5703L20 19.361ZM1.71135 9.12707C1.71135 5.35069 4.78038 2.28166 8.55676 2.28166C12.3331 2.28166 15.4022 5.35069 15.4022 9.12707C15.4022 12.9035 12.3331 15.9725 8.55676 15.9725C4.78038 15.9725 1.71135 12.9035 1.71135 9.12707Z" fill="white"></path>
+        </symbol>
+
+        <symbol id="icon-search" viewBox="0 0 20 21" >
+            <path d="M20 19.361L15.1854 14.5464C16.3833 13.0632 17.1135 11.1807 17.1135 9.12707C17.1135 4.40374 13.2801 0.570312 8.55676 0.570312C3.83343 0.570312 0 4.40374 0 9.12707C0 13.8504 3.83343 17.6838 8.55676 17.6838C10.6104 17.6838 12.4929 16.9537 13.976 15.7557L18.7906 20.5703L20 19.361ZM1.71135 9.12707C1.71135 5.35069 4.78038 2.28166 8.55676 2.28166C12.3331 2.28166 15.4022 5.35069 15.4022 9.12707C15.4022 12.9035 12.3331 15.9725 8.55676 15.9725C4.78038 15.9725 1.71135 12.9035 1.71135 9.12707Z" fill="white" ></path>
+        </symbol>
+
+        <symbol id="icon-cart" viewBox="0 0 24 25" >
+            <path d="M20.8889 8.01476H16.9444C16.6667 5.51476 14.5778 3.57031 12 3.57031C9.42222 3.57031 7.33333 5.51476 7.05556 8.01476H3.11111L2 23.5703H22L20.8889 8.01476ZM12 5.23698C13.6444 5.23698 15.0111 6.44809 15.2778 8.01476H8.72222C8.98889 6.44809 10.3556 5.23698 12 5.23698ZM3.78889 21.9036L4.66667 9.68142H7V11.9036H8.66667V9.68142H15.3333V11.9036H17V9.68142H19.3333L20.2111 21.9036H3.78889Z" fill="white"></path>
+        </symbol>
+        <symbol id="icon-my" viewBox="0 0 20 21" >
+            <path d="M12.5889 9.38056C14.0333 8.50278 15 6.93611 15 5.125C15 2.35833 12.7667 0.125 10 0.125C7.23333 0.125 5 2.35833 5 5.125C5 6.93611 5.96667 8.50278 7.41111 9.38056C3.14444 10.5917 0 14.6806 0 19.5694H1.66667C1.66667 14.6694 5.4 10.6806 10 10.6806C14.6 10.6806 18.3333 14.6694 18.3333 19.5694H20C20 14.6806 16.8556 10.5917 12.5889 9.38056ZM10 1.79167C11.8333 1.79167 13.3333 3.29167 13.3333 5.125C13.3333 6.95833 11.8333 8.45833 10 8.45833C8.16667 8.45833 6.66667 6.95833 6.66667 5.125C6.66667 3.29167 8.16667 1.79167 10 1.79167Z" fill="white"></path>
+        </symbol>
+      </svg>
+
+
+    <header id="header">
+        <!-- 슬라이드바 -->
+        <div class="top-banner">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="" class="top-slide"><span>[블랙프라이데이]</span>1년에 단 한번 UP TO 80% + 5% 무제한 쿠폰</a></div>
+                    <div class="swiper-slide"><a href="" class="top-slide"><span>[전지현의 안다르]</span>  화보 착용 세트 보러가기</a></div>
+                    <div class="swiper-slide"><a href="" class="top-slide"><span>[공식몰 단독]</span> 카톡 채널 추가하고 1만 원 할인 받기</a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="header-fix ">
+            <div class="group-top">
+                <h1 class="logo">
+                    <a href="">
+                        <img src="./assets/images/main_logo.svg" alt="안다르">
+                    </a>
+                </h1>
+                
+                <div class="util-area">
+                    <button class="btn-menu">
+                        <svg width="22" height="17"> <use xlink:href="#icon-menu"></use> </svg>
+                        <span class="blind">메뉴바</span></button>
+                    <button class="btn-search">
+                        <svg width="20" height="21"> <use xlink:href="#icon-search"></use> </svg>
+                        <span class="blind">검색</span>
+                    </button>
+                </div>
+                <div class="util-area">
+                    <button class="btn-cart">
+                        <svg width="24" height="25"> <use xlink:href="#icon-cart"></use> </svg>
+                        <p class="cart-area">
+                            <span class="cart-btn">0</span>
+                          </p>
+                        <span class="blind">장바구니</span>
+                    </button>
+                    <button class="btn-my">
+                        <svg width="20" height="21"> <use xlink:href="#icon-my"></use> </svg>
+                        <span class="blind">내정보</span>
+                    </button>
+                </div>
+            </div>
+
+
+
+            <div class="group-bottom">
+
+                <!-- 기본상태  -->
+                <div class="menu-front">
+                    <h3>전체메뉴</h3>
+                    <nav class="nav-area">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="" class="title point dot"><span>BLACK FRIDAY</span></a></li>
+                            <li class="nav-item"><a href="" class="title"><span>베스트</span></a></li>
+                            <li class="nav-item"><a href="" class="title dot"><span>신상</span></a></li>
+                            <li class="nav-item"><a href="" class="title"><span>우먼즈</span></a></li>
+                            <li class="nav-item"><a href="" class="title"><span>맨즈</span></a></li>
+                            <li class="nav-item"><a href="" class="title"><span>언더웨어</span></a></li>
+                            <li class="nav-item"><a href="" class="title"><span>골프웨어</span></a></li>
+                            <li class="nav-item"><a href="" class="title">러닝</a></li>
+                            <li class="nav-item"><a href="" class="title">전지현 세트</a></li>
+                            <li class="nav-item"><a href="" class="title dot">주니어</a></li>
+                            <li class="nav-item"><a href="" class="title">러닝화/용품/가방</a></li>
+                            <li class="nav-item"><a href="" class="title">아울렛</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn-open">
+                        <button class="open"><span class="blind">장바구니</span></button>
+                    </div>
+                </div>
+                <!-- 전체메뉴 뉼렀을대 -->
+                <div class="menu-all">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="" class="title point dot" style="color: #C86733;"><span>BLACK FRIDAY</span></a></li>
+                    <li class="nav-item"><a href="" class="title"><span>베스트</span></a></li>
+                    <li class="nav-item"><a href="" class="title dot"><span>신상</span></a></li>
+                    <li class="nav-item"><a href="" class="title"><span>우먼즈</span></a></li>
+                    <li class="nav-item"><a href="" class="title"><span>맨즈</span></a></li>
+                    <li class="nav-item"><a href="" class="title"><span>언더웨어</span></a></li>
+                    <li class="nav-item"><a href="" class="title"><span>골프웨어</span></a></li>
+                    <li class="nav-item"><a href="" class="title"><span>러닝</span></a></li>
+                    <li class="nav-item"><a href="" class="title">전지현 세트</a></li>
+                    <li class="nav-item"><a href="" class="title dot">주니어</a></li>
+                    <li class="nav-item"><a href="" class="title">러닝화/용품/가방</a></li>
+                    <li class="nav-item"><a href="" class="title">아울렛</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <nav class="side" id="sideNav">
+            <h2 class="blind">사이드메뉴</h2>
+            <div class="login-area">
+                <div class="group-list">
+                    <a href="" class="login">로그인</a>
+                    <a href="" class="Signup">회원가입</a>
+                </div>
+                <p>로그인 하고,<span> 회원 전용 혜택</span> 확인하기</p>
+               
+            </div>
+            <div class="menu-area">
+                <ul class="list">
+                    <li class="item">
+                        <a href="" class="menutitle point dot">
+                            <span>BLACK FRIDAY</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menutitle point dot">신상</a>
+                        <ul class="sub depth2-list">
+                            <li class="depth2-item"><a href="" class="menuonetitle">전체</a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">우먼즈</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">맨즈</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">언더웨어</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">골프웨어</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">위크레저</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">용품</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">기간할인</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menutitle dot">베스트</a>
+                        <ul class="sub depth2-list">
+                            <li class="depth2-item"><a href="" class="menuonetitle">전체</a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">봄 준비 데일리웨어</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>청바지</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>와이드팬츠</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>우먼즈</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>맨즈</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">에어데님 컬렉션</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>우먼즈</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>맨즈</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">우먼즈</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">맨즈</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">기모</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">가방/용픔/신발</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">러닝&아웃도어 위크</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menutitle">우먼즈</a>
+                        <ul class="sub depth2-list">
+                            <li class="depth2-item"><a href="" class="menuonetitle">전체</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">와이드팬츠</a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">레깅스</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>와이드</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>조거핏</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>부츠컷</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>8.2~10부 </span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>임부레깅스</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>에어엑스퍼트</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>에어무스</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>에어리프리</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>소프트텐션</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">하의</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>레깅스</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>와이드팬츠</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>슬랙스</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>청바지 </span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>치노/카고팬츠</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>반바지</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">상의</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>티셔츠/폴로티</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>맨투맨/후디</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>스포츠 브라탑</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>집업  </span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>크롭탑/크롭티</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>가디건/커버업</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터/자켓</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle" style= "border-bottom: 1px solid #D9DBE0;">세트</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>와이드</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>조거핏</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>부츠컷</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>8.2~10부 </span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>임부레깅스</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>에어엑스퍼트</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>에어무스</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>에어리프리</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>소프트텐션</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">스포츠 브라탑</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">청바지 </a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">조거팬츠 </a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">티셔츠/폴로티 </a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">치마/점프수트 </a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">언더웨어 </a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">임부복 </a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menutitle">맨즈</a>
+                        <ul class="sub depth2-list">
+                            <li class="depth2-item"><a href="" class="menuonetitle">전체</a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">하의</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">상의</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle" style= "border-bottom: 1px solid #D9DBE0;">세트</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">골프</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">위크레저</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">청바지 </a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">슬랙스 </a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">조거팬츠 </a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">티셔츠/폴로티</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">셔츠</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle" style= "border-bottom: 1px solid #D9DBE0;">A.R.M</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle" >드로즈/이너</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menutitle">언더웨어</a>
+                        <ul class="sub depth2-list">
+                            <li class="depth2-item"><a href="" class="menuonetitle">전체</a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">우먼즈</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">맨즈</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">주니어</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menutitle">골프</a>
+                        <ul class="sub depth2-list">
+                            <li class="depth2-item"><a href="" class="menuonetitle">전체</a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">우먼즈</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">맨즈</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menutitle">운동별추천</a>
+                        <ul class="sub depth2-list">
+                            <li class="depth2-item"><a href="" class="menuonetitle">전체</a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">골프</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">러닝</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">필라테스/요가</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">GYM</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">등산</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">테니스 </a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">수영 </a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menuonetitle">전지현 세트</a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menutitle">주니어</a>
+                        <ul class="sub depth2-list">
+                            <li class="depth2-item"><a href="" class="menuonetitle">전체</a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">남</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">여</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">세트</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menutitle">가방/용품/신발</a>
+                        <ul class="sub depth2-list">
+                            <li class="depth2-item"><a href="" class="menuonetitle">전체</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">워킹화</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">런닝화</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">양말</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">가방</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">용품</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">모자/헤어밴드</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">마스크</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menutitle">아울렛</a>
+                        <ul class="sub depth2-list">
+                            <li class="depth2-item"><a href="" class="menuonetitle">전체</a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">우먼즈</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">맨즈</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">주니어</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>상의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>하의</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>아우터</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menuonetitle">상품권</a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menutitle">고객지원</a>
+                        <ul class="sub depth2-list">
+                            <li class="depth2-item"><a href="" class="menuonetitle">자주 묻는 질문</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">공지사항</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">대량 구매 안내</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">전국 매장 안내</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">세탁 방법 안내</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="" class="menutitle">안다르 스토리</a>
+                        <ul class="sub depth2-list">
+                            <li class="depth2-item"><a href="" class="menuonetitle">브랜드 스토리</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">안다르 '애슬릿 리더'</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">'전지현의 안다르'룩북</a></li>
+                            <li class="depth2-item"><a href="" class="menutitle">서스테이너블</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>에어쿨링</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>에어리핏</span></a></li>
+                                        <li class="depth3-item"><a href="" class="submenu"><span>서스테이너블 스토리</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menutitle">슈퍼모델 콜라보</a>
+                                <div class="sub depth3-list">
+                                    <ul class="depth3-sub">
+                                        <li class="depth3-item"><a href="" class="submenu"><span>전체</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">안다르 매거진</a></li>
+                            <li class="depth2-item"><a href="" class="menuonetitle">EVENT</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="collection">
+                <div class="brand-is">
+                    <h3 class="cont-title">브랜드 이슈</h3>
+                    <a href=""><img src="../assets/images/menu-img.jpg" alt=""></a>
+                    <div class="more-content">
+                         <img src="../안다르/assets/images/aside_bannner.jpg" alt="">
+                        <p class="title">25SS 신상 보러 가기 <span class="all">전체 →</span></p>
+                    </div>
+                </div>
+                <div class="brand_tab">
+                    <a href="">브랜드스토리</a>
+                    <a href="">전국매장안내</a>
+                  </div>
+            </div>
+            <button type="button" class="close-btn">
+                <span class="blind">닫기</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17 1.99414L16.0059 1L9 8.00586L1.99414 1L1 1.99414L8.00586 9L1 16.0059L1.99414 17L9 9.99414L16.0059 17L17 16.0059L9.99414 9L17 1.99414Z" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="0.4">
+                    </path>
+                </svg>
+            </button>
+         </nav>
+
+        <div class="dimmed "></div>
+
+
+        <div id="popSearch">
+            <!-- fix d:n -->
+        </div>
+        
+
+    </header>
+
+
+
+
+    <mian>
+
+        <section class="sc-mainadd">
+            <h2 class="blind">메인비주얼</h2>
+            <div class="swiper mainSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./assets/images/main_banner1.jpg" alt="">
+                            <div class="text-area">
+                                <strong class="title">새로운 시작도 안다르와 함께 <br>  2025 새해 특별전 </strong>
+                                <p class="desc">테크니컬 애슬레저 안다르의 기능성을 만나보세요. </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./assets/images/main_banner.jpg" alt="">
+                            <div class="text-area">
+                                <strong class="title">"다가오는 봄 준비"<br>  25 SS 신상 둘러보기</strong>
+                                <p class="desc">안다르의 신상으로 새로운 계절을 열어보세요. </p>
+                            </div>
+                        </a>
+                    </div>
+                   
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./assets/images/main_banner2.jpg" alt="">
+                            <div class="text-area">
+                                <strong class="title">"여러 겹 껴입어도 편안" <br>  둔해보이지 않는 안다르 아우터 </strong>
+                                <p class="desc">심지어 가볍기까지 하니까,<br> 출근·모임·데이트 어디든 손색 없죠.</p>
+                            </div>
+                        </a>
+                    </div>
+                   
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./assets/images/main_banner4.jpg" alt="">
+                            <div class="text-area">
+                                <strong class="title"> "오직 안다르에만"<br> 전지현 착장 그대로 쇼핑하기</strong>
+                                <p class="desc">전지현의 화보 속 코디를 확인해보세요.</p>
+                            </div>
+                        </a>
+                    </div>
+                   
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+
+
+
+
+
+        <section class="sc-video">
+            <div class="video">
+                <div class="video-area">
+                    <video src="https://media.andar-publish.com/video/jeonjihyun_tvc2.mp4" autoplay="" muted="" loop="" playsinline=""></video>
+                </div>
+
+                <div class="text-area">
+                    <h2>전지현의 안다르</h2>
+                    <p>전지현이 선택한 애슬레저 스타일링, 지금 만나보세요.</ㅔ>
+                    <a href="" class="" >전지현 세트 쇼핑하기</a>
+                </div>             
+            </div>
+        </section>
+
+
+
+        <section class="sc-best">
+            <div class="group-best">
+                <h2 class="headline">BEST SELLERS</h2>
+                <div class="tab-area">
+                    <ul class="tab-list" role="tablist">
+                        <li data-tab="#tab1" role="presentation" class="active"><a href="" role="tab" aria-selected="true">전체</a></li>
+                        <li data-tab="#tab2" role="presentation"><a href="" role="tab" aria-selected="false">우먼즈</a></li>
+                        <li data-tab="#tab3" role="presentation"><a href="" role="tab" aria-selected="false">맨즈</a></li>
+                        <li data-tab="#tab4" role="presentation"><a href="" role="tab" aria-selected="false">주니어</a></li>
+                        <li data-tab="#tab5" role="presentation"><a href="" role="tab" aria-selected="false">홈트용품</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="tab-content">
+                <div class="tab active" id="tab1" >
+                    <ul class="prd-list grid2">
+                        <li class="prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/51b2b61f82910cdfa3bbd46456ab05a3.jpg" alt class="main-img">
+                                    <span class="rank">1</span>
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1+1] 에어쿨링 지니 시그니처 레깅스</p>
+                                    <div class="price-area">
+                                        <span class="price">49,000원</span>
+                                        <span class="sale-price">98,000원 </span>
+                                        <strong class="precent">50%</strong>
+                                    </div>
+                                    <div class="icons">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/d083b704392614d50542930e7f7af6af.jpg" alt class="main-img">
+                                    <span class="rank">2</span>
+                                    <img src="./assets/images/image_custom_5517295637362001.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[3 SET] NEW 에어리핏 약기모 오버핏 티셔츠</p>
+                                    <div class="price-area">
+                                        <span class="price">69,000원</span>
+                                        <span class="sale-price">123,000원 </span>
+                                        <strong class="precent">43%</strong>
+                                    </div>
+                                    <div class="icons">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/b56d6b8b78d8ef34b7bc12a8b69f4a0d.jpg" alt class="main-img">
+                                    <span class="rank">3</span>
+                                    <img src="./assets/images/image_custom_5517295637362001.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1&1] 에어무스 맨즈 기모 퍼포먼스 조거팬츠</p>
+                                    <div class="price-area">
+                                        <span class="price">94,000원</span>
+                                        <span class="sale-price">138,000원 </span>
+                                        <strong class="precent">31%</strong>
+                                    </div>
+                                    <div class="icons">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/b99b0b468d259a2e5be1a27fad7f464d.jpg" alt class="main-img">
+                                    <span class="rank">4</span>
+                                    <img src="./assets/images/image_custom_5517295637362001.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1&1] 컴포트 멜란지 맨즈 기모 테이퍼드핏 슬랙스</p>
+                                    <div class="price-area">
+                                        <span class="price">99,000원</span>
+                                        <span class="sale-price">164,000원 </span>
+                                        <strong class="precent">39%</strong>
+                                    </div>
+                                    <div class="icons">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab" id="tab2" style="display: none;">
+                    <ul class="prd-list grid2">
+                        <li class="prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/51b2b61f82910cdfa3bbd46456ab05a3.jpg" alt class="main-img">
+                                    <span class="rank">1</span>
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1+1] 에어쿨링 지니 시그니처 레깅스</p>
+                                    <div class="price-area">
+                                        <span class="price">49,000원</span>
+                                        <span class="sale-price">98,000원 </span>
+                                        <strong class="precent">50%</strong>
+                                    </div>
+                                    <div class="icons">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/d083b704392614d50542930e7f7af6af.jpg" alt class="main-img">
+                                    <span class="rank">2</span>
+                                    <img src="./assets/images/image_custom_5517295637362001.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[3 SET] NEW 에어리핏 약기모 오버핏 티셔츠</p>
+                                    <div class="price-area">
+                                        <span class="price">69,000원</span>
+                                        <span class="sale-price">123,000원 </span>
+                                        <strong class="precent">43%</strong>
+                                    </div>
+                                    <div class="icons">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/b56d6b8b78d8ef34b7bc12a8b69f4a0d.jpg" alt class="main-img">
+                                    <span class="rank">3</span>
+                                    <img src="./assets/images/image_custom_5517295637362001.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1&1] 에어무스 맨즈 기모 퍼포먼스 조거팬츠</p>
+                                    <div class="price-area">
+                                        <span class="price">94,000원</span>
+                                        <span class="sale-price">138,000원 </span>
+                                        <strong class="precent">31%</strong>
+                                    </div>
+                                    <div class="icons">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/b99b0b468d259a2e5be1a27fad7f464d.jpg" alt class="main-img">
+                                    <span class="rank">4</span>
+                                    <img src="./assets/images/image_custom_5517295637362001.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1&1] 컴포트 멜란지 맨즈 기모 테이퍼드핏 슬랙스</p>
+                                    <div class="price-area">
+                                        <span class="price">99,000원</span>
+                                        <span class="sale-price">164,000원 </span>
+                                        <strong class="precent">39%</strong>
+                                    </div>
+                                    <div class="icons">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab" id="tab3" style="display: none;">
+                    3333
+                </div>
+                <div class="tab" id="tab4" style="display: none;">
+                    444
+                </div>
+                <div class="tab" id="tab5" style="display: none;">
+                    555
+                </div>
+            </div>
+
+            <div class="btn-allview">
+                <a href="">
+                    <span>베스트</span> 더보기
+                </a>
+            </div>
+
+
+        </section>
+
+        <section class="sc-brandstory">
+            <div class="brand-area">
+                <a href="">
+                    <h2 class="title">애슬레저 1위 안다르, <strong>브랜드 스토리</strong></h2></br>
+                    <strong class="sub-title">Technical athleisure</br>andar</strong>
+                    <p class="desc"> * 애슬레저 1위, 2024 대한민국 패션품질대상</br> 스포츠 애슬레저 부문</p>
+                    <span class="link-more">자세히 보기</span>
+                </a>
+            </div>
+        </section>
+
+
+
+        <section class="sc-banner">
+            <h2 class="blind">멤버십전용혜택,할인쿠폰</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href=""><img src="./assets/images/Membership banner1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href=""><img src="./assets/images/Membership banner2.jpg" alt=""></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+
+        <section class="sc-pick">
+
+
+
+            <h2 class="headline">andar'S PICK</h2>
+
+
+            <div class="content">
+                <div class="top-lookbook">
+                    <a href="">
+                        <img src="./assets/images/c0d9ab588a2b6ab869d47814e2b663f7.jpg" alt="">
+                        <div class="desc-area">
+                            <h3 class="title">"스타일은 UP, 무게는 DOWN"</br>  따뜻하고 세련된 겨울 트렌치 코트</span>
+                            <p>허리를 잡아주어 깔끔한 핏을 연출하니 </br> 올겨울, 나만 트렌디한 이유죠.</p>
+                            <span class="go_cate">보러가기</span>
+                        </div>
+                    </a>
+                </div>
+                <ul class="prd-list ">
+                    <li class="prd-item">
+                        <a href="">
+                            <div class="img-area">
+                                <img src="./assets/images/a46c18822dd79341ece667ee6529cf21.jpg" alt class="main-img">
+                            </div>
+                            <div class="text-area">
+                                <p class="title">프리마로프트 윈터 윈드자켓</p>
+                                <div class="price-area">
+                                    <span class="price">299,000원</span>
+                                    <span class="sale-price"></span>
+                                    <strong class="precent"></strong>
+                                </div>
+                                <div class="icons">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="prd-item">
+                        <a href="">
+                            <div class="img-area">
+                                <img src="./assets/images/ef0f421c27d42ab7a3bfaa31c8346945.jpg" alt class="main-img">                               
+                                <img src="./assets/images/image_custom_5517295637362001.png" alt class="icon">
+                            </div>
+                            <div class="text-area">
+                                <p class="title">NEW 에어웜 기모 샤론 부츠컷 레깅스</p>
+                                <div class="price-area">
+                                    <span class="price">45,000원</span>
+                                    <span class="sale-price">49,000원 </span>
+                                    <strong class="precent">8%</strong>
+                                </div>
+                                <div class="icons">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="top-lookbook">
+                    <a href="">
+                        <img src="./assets/images/87fa6044dcf32e0f0e3ef9f1faafaf50.jpg" alt="">
+                        <div class="desc-area">
+                            <h3 class="title">"한파 출근길이 걱정 없는 이유"</br> 무게는 덜고 보온은 더한 아우터</span>
+                            <p>높은 솜털 비율로 가볍고</br> 따뜻하니 출근부터 캠핑까지 한 장이면 충분하죠.</p>
+                            <span class="go_cate">보러가기</span>
+                        </div>
+                    </a>
+                </div>
+                <ul class="prd-list ">
+                    <li class="prd-item">
+                        <a href="">
+                            <div class="img-area">
+                                <img src="./assets/images/ff0cc37e22bd26561484d132a2161f18.jpg" alt class="main-img">
+                            </div>
+                            <div class="text-area">
+                                <p class="title">웨더브레이크 맨즈 덕다운 후디 자켓</p>
+                                <div class="price-area">
+                                    <span class="price">299,000원</span>
+                                    <span class="sale-price"></span>
+                                    <strong class="precent"></strong>
+                                </div>
+                                <div class="icons">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="prd-item">
+                        <a href="">
+                            <div class="img-area">
+                                <img src="./assets/images/c59d73c7947b7f1bee08443be6054a7b.jpg" alt class="main-img">
+                                <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                            </div>
+                            <div class="text-area">
+                                <p class="title">에어솔리드 맨즈 약기모 카고 슬랙스</p>
+                                <div class="price-area">
+                                    <span class="price">75,000원</span>
+                                    <span class="sale-price">79,000원 </span>
+                                    <strong class="precent">5%</strong>
+                                </div>
+                                <div class="icons">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            
+        
+
+
+        </section>
+        
+
+        
+        <section class="sc-cate">
+            <h2 class="blind">카테고리별제품</h2>
+            <div class="content">
+                <div class="group-head">
+                    <h3 class="cate_title"><a href="">골프웨어</a></h3>
+                    <div class="more-group">
+                        <a href="" class="more">더보기</a>
+                        <span class="cate_more_img"></span>
+                    </div>
+                </div>
+                <div class="swiper">
+                    <ul class="swiper-wrapper prd-list">
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/9325a669b790ee286c257f151d0b182e.jpg" alt class="main-img">
+                                    <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1&1] 컴포트 멜란지 맨즈 기모 테이퍼드핏 슬랙스</p>
+                                    <div class="price-area">
+                                        <span class="price">99,000원</span>
+                                        <span class="sale-price">164,000원</span>
+                                        <strong class="precent">39%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/d1fb4fc4a43076bf4e693d6aff23797d.jpg" alt class="main-img">
+                                    <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1&1] 컴포트 멜란지 맨즈 기모 테이퍼드핏 슬랙스</p>
+                                    <div class="price-area">
+                                        <span class="price">79,000원</span>
+                                        <span class="sale-price">150,000원</span>
+                                        <strong class="precent">47%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/c17806b60770993f4183caa3c0b88ed8.jpg" alt class="main-img">
+                                    <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1&1] NEW 에어무스 기모 조거핏 레깅스</p>
+                                    <div class="price-area">
+                                        <span class="price">75,000원</span>
+                                        <span class="sale-price">138,000원</span>
+                                        <strong class="precent">45%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/fdgsdgsdfgfgsdfg.jpg" alt class="main-img">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1&1] NEW 에어솔리드 맨즈 플러스 기모 슬랙스</p>
+                                    <div class="price-area">
+                                        <span class="price">119,000원</span>
+                                        <span class="sale-price">178,000원</span>
+                                        <strong class="precent">33%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/qweqeqweqeqeqwe.jpg" alt class="main-img">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1&1] NEW 에어리핏 맨즈 폴로 롱슬리브</p>
+                                    <div class="price-area">
+                                        <span class="price">65,000원</span>
+                                        <span class="sale-price">122,000원 </span>
+                                        <strong class="precent">46%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/ev_prd.jpg" alt="이벤트추가상품" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+        
+                </div>
+            </div>
+            <div class="content">
+                <div class="group-head">
+                    <h3 class="cate_title "><a href="">워크레저</a></h3>
+                    <div class="more-group">
+                        <a href="" class="more">더보기</a>
+                        <span class="cate_more_img"></span>
+                    </div>
+                </div>
+                <div class="swiper">
+                    <ul class="swiper-wrapper prd-list">
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/e14fd4b7d8dd1cd174ac6631325af684.jpg" alt class="main-img">
+                                    <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">프리마로프트 맨즈 매트웜 패딩 자켓</p>
+                                    <div class="price-area">
+                                        <span class="price">229,000원</span>
+                                        <span class="sale-price"></span>
+                                        <strong class="precent"></strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/57305520cb7e1fa9d05a34c96e2901c8.jpg" alt class="main-img">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">에어스트 폴로 롱슬리브 원피스</p>
+                                    <div class="price-area">
+                                        <span class="price">109,000원</span>
+                                        <span class="sale-price"></span>
+                                        <strong class="precent"></strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/cec6d82400f0efe427b25f1fb53b9841.jpg" alt class="main-img">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">시티코튼 피치 워크 자켓</p>
+                                    <div class="price-area">
+                                        <span class="price">159,000원</span>
+                                        <span class="sale-price"></span>
+                                        <strong class="precent"></strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/ewrerwwerf.jpg" alt class="main-img">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">컴포트 프레시 오버핏 셔츠</p>
+                                    <div class="price-area">
+                                        <span class="price">69,000원</span>
+                                        <span class="sale-price"></span>
+                                        <strong class="precent"></strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/qweqweqwwq.jpg" alt class="main-img">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">울리크 세미 와이드 슬랙스</p>
+                                    <div class="price-area">
+                                        <span class="price">66,000원</span>
+                                        <span class="sale-price">79,000원 </span>
+                                        <strong class="precent">16%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/ev_prd.jpg" alt="이벤트추가상품" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+        
+                </div>
+            </div>
+            <div class="content">
+                <div class="group-head">
+                    <h3 class="cate_title "><a href="">우먼즈 기모</a></h3>
+                    <div class="more-group">
+                        <a href="" class="more">더보기</a>
+                        <span class="cate_more_img"></span>
+                    </div>
+                </div>
+                <div class="swiper">
+                    <ul class="swiper-wrapper prd-list">
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/d1fb4fc4a43076bf4e693d6aff23797d.jpg" alt class="main-img">
+                                    <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1&1] 에어스트 기모 슬랙스 (슬림핏, 부츠컷)</p>
+                                    <div class="price-area">
+                                        <span class="price">79,000원</span>
+                                        <span class="sale-price">150,000원  </span>
+                                        <strong class="precent">47%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/01eb56dc572d3663a5e67b0bbff44906.jpg" alt class="main-img">
+                                    <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1&1] 에어리핏 기모 와이드 팬츠</p>
+                                    <div class="price-area">
+                                        <span class="price">88,000원</span>
+                                        <span class="sale-price">138,000원  </span>
+                                        <strong class="precent">36%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/BEST SELLERS2.jpg" alt class="main-img">
+                                    <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1&1] NEW 에어무스 기모 조거핏 레깅스</p>
+                                    <div class="price-area">
+                                        <span class="price">75,000원</span>
+                                        <span class="sale-price">138,000원 </span>
+                                        <strong class="precent">45%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/ea48d8b7062ce64c6c361f32829b7ad8.jpg" alt class="main-img">
+                                    <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[2+1] 안다르 베스트 티셔츠 (우먼즈 & 맨즈 에어리핏 약기모)</p>
+                                    <div class="price-area">
+                                        <span class="price">79,000원</span>
+                                        <span class="sale-price">129,000원 </span>
+                                        <strong class="precent">38%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/1612a7acc2f50f2fe97d6e44c6177ea5.jpg" alt class="main-img">
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">[1&1] NEW 에어웜 기모 샤론 부츠컷 레깅스</p>
+                                    <div class="price-area">
+                                        <span class="price">79,000원</span>
+                                        <span class="sale-price">98,000원 </span>
+                                        <strong class="precent">19%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+        
+                </div>
+            </div>
+            <div class="content">
+                <div class="group-head">
+                    <h3 class="cate_title "><a href="">맨즈 기모</a></h3>
+                    <div class="more-group">
+                        <a href="" class="more">더보기</a>
+                        <span class="cate_more_img"></span>
+                    </div>
+                </div>
+                <div class="swiper">
+                    <ul class="swiper-wrapper prd-list">
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/b56d6b8b78d8ef34b7bc12a8b69f4a0d.jpg" alt class="main-img">
+                                    <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="name">[1&1] 에어무스 맨즈 기모 퍼포먼스 조거팬츠</p>
+                                    <div class="price-area">
+                                        <span class="price">94,000원</span>
+                                        <span class="sale-price">138,000원</span>
+                                        <strong class="precent">31%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/b99b0b468d259a2e5be1a27fad7f464d.jpg" alt class="main-img">
+                                    <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="name">[1&1] 컴포트 멜란지 맨즈 기모 테이퍼드핏 슬랙스</p>
+                                    <div class="price-area">
+                                        <span class="price">99,000원</span>
+                                        <span class="sale-price">164,000원</span>
+                                        <strong class="precent">39%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/7f0b53e886adc17dabfb57b25043395e.jpg" alt class="main-img">
+                                    <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="name">[1&1] 에어웜 맨즈 기모 퍼포먼스 레깅스</p>
+                                    <div class="price-area">
+                                        <span class="price">75,000원</span>
+                                        <span class="sale-price">98,000원</span>
+                                        <strong class="precent">23%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/528af1606613d845c28713a94ff9f111.jpg" alt class="main-img">
+                                    <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="name">페더리피치 맨즈 다운 베스트</p>
+                                    <div class="price-area">
+                                        <span class="price">149,000원</span>
+                                        <span class="sale-price"> </span>
+                                        <strong class="precent"></strong>
+                                    </div>
+                                    <div class="icons">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide prd-item">
+                            <a href="">
+                                <div class="img-area">
+                                    <img src="./assets/images/69efe967333342f0d966edb297102777.jpg" alt class="main-img">
+                                    <img src="./assets/images/image_custom_3716654997811714.png" alt class="icon">
+                                </div>
+                                <div class="text-area">
+                                    <p class="name">[1&1] 에어솔리드 맨즈 약기모 밴딩 슬랙스</p>
+                                    <div class="price-area">
+                                        <span class="price">119,000원</span>
+                                        <span class="sale-price">144,000원</span>
+                                        <strong class="precent">17%</strong>
+                                    </div>
+                                    <div class="icons">
+                                        <img src="./assets/images/black_friday.gif" alt="블랙 프라이데이" class="coupon">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+        
+                </div>
+            </div>
+        </section>
+
+        
+
+
+
+
+        <section class="sc-benifit">
+            <h2 class="blind">안다르 멤버쉽 혜택</h2>
+            <div class="tilte">WITH andar</div>
+            <div class="content">
+                <img src="./assets/images/background_1.jpg" alt="">
+                <div class="text-area">
+                    <h2 class="tilte">안다르 멤버십</h2>
+                    <p>안다르 멤버만을 위한 등급별로 </br>늘어나는 혜택을 확인해 보세요.</p>
+                    <a href="" class="link-m">자세히 보기</a>
+                </div>
+            </div>
+            <div class="content">
+                <img src="./assets/images/background_2.jpg" alt="">
+                <div class="text-area">
+                    <h2 class="tilte">안다르 오프라인 스토어 안내</h2>
+                    <p>전국 백화점과 아울렛에서 안다르 제품을 경험하세요. </br>
+                        안다르만의 스토어 멤버십을 통해</br>
+                        특별한 혜택도 함께 누려보세요.</p>
+                    <a href="" class="link-m">자세히 보기</a>
+                </div>
+            </div>
+        </section>
+        <div id="quick">
+            <ul>
+                <li class="up">
+                    <button id="ch-custom-button">
+                        <span class="blind">up</span>
+                        <a href=""></a>
+                    </button>
+                </li>
+                <li class="down displaynone">
+                    <span class="blind">down</span>
+                    <a href="">
+                        <img src="../안다르/assets/images/ch-custom-btn-mo.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </mian>
+    <footer id="footer">
+        <h2 class="blind">안다르푸터</h2>
+        <div class="inner">
+
+            <div class="logo-area">
+                <a href="" class="logo">
+                    <img src="./assets/images/logo_w_slogan_mo.svg" alt="로고">
+                </a>
+                <p class="desc">애슬레저 1위, 2024 대한민국 패션품질대상</br> 스포츠 애슬레저 부문 </p>
+            </div>
+
+
+
+            <div class="service-area">
+                <h3 >고객센터 </h3>
+                <div class="call">
+                    <a href="tel:+1566-7318" class="tel">1566-7318</a>
+                    <a href="" class="chat"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M9.00281 0H1.00281C0.452808 0 0.00780761 0.45 0.00780761 1L0.00280762 10L2.00281 8H9.00281C9.55281 8 10.0028 7.55 10.0028 7V1C10.0028 0.45 9.55281 0 9.00281 0ZM2.00281 3.5H8.00281V4.5H2.00281V3.5ZM6.00281 6H2.00281V5H6.00281V6ZM8.00281 3H2.00281V2H8.00281V3Z" fill="#76787E"></path></svg>채팅 문의하기</a>
+                </div>
+                <p class="time">평일 AM 10:00 ~ PM 05:30 / 주말, 공휴일 휴무</p>
+                <p class="time">점심 PM 12:00 ~ PM 01:00</p>
+            </div>
+
+
+            <div class="sns-area">
+                <a href=""><img src="./assets/images/icon_facebook.svg" alt="페이스북"></a>
+                <a href=""><img src="./assets/images/icon_youtube.svg" alt="유투브"></a>
+                <a href=""><img src="./assets/images/icon_instagram.svg" alt="인스타그램"></a>
+            </div>
+
+
+            <div class="policy-area">
+                <ul>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">상품권 이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li class="blank"></li>
+                    <li><a href="">쇼핑몰 이용안내</a></li>
+                    <li><a href="">대량구매 안내</a></li>
+                    <li><a href="">강사회원 신청</a></li>
+                    <li><a href="">센터회원 신청</a></li>
+                </ul>
+            </div>
+
+
+            <address class="addr-area">
+                <p class="">주식회사 안다르</p>
+                <p>대표이사 : 김철웅, 공성아</p>
+                <br>
+                <p>사업자등록번호 : <a href="">103-88-00990</a></p>
+                <p>통신판매업신고 : 2021-서울마포-3979</p>
+                <br>
+                <p>주소 : 05510 서울 송파구 올림픽로35다길 42 한국루터회관 9,11,12층</p>
+                <br>
+                <p class="">TEL : 1566-7318</p>
+                <p>호스팅제공자 : 카페24(주)</p>
+                <br>
+                <p>이용 문의 : <a href="mailto:help@andar.co.kr">help@andar.co.kr</a></p>
+                <br>
+                <p>마케팅제휴 문의 : <a href="mailto:partnership@andar.co.kr">partnership@andar.co.kr</a></p>
+                <br>
+                <p>해외수출 문의 : <a href="mailto:overseas@andar.co.kr">overseas@andar.co.kr</a></p>
+            </address>
+
+            <small>
+                <div class="copy">
+                    Copyright by <span>안다르</span>.all rights reserved.
+                </div>
+            </small>
+            <div class="mark-area">
+                <ul class="">
+                    <li><a href=""><img src="./assets/images/icon_ffc.svg" alt="공정거래위원회"></a></li>
+                    <li><a href=""><img src="./assets/images/icon_symantec.svg" alt="시만텍"></a></li>
+                    <li><a href=""><img src="./assets/images/icon_kg.svg" alt="KG이니시스"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
